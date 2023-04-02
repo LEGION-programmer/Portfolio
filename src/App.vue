@@ -7,6 +7,6 @@
 
 <style>
 body{
-  background-color: rgb(207, 207, 207);
+  background-color: rgb(160, 160, 160);
 }
 </style>
