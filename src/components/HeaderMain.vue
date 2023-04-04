@@ -1,26 +1,55 @@
 <template>
   <div class="container">
     <div class="logo">
-      <h1>{{ headerLogo }}</h1>  
+      <h1 @click="home()">{{ headerLogo }}</h1>  
     </div>
     <div class="options">
-      <a href="#" class="links">Doświadczenie</a>
-      <a href="#" class="links">Projekty i technologie</a>
-      <a href="#" class="links">O mnie</a>
-      <a href="#" class="links">Media</a>
-      <a href="#" class="links">Kontakt</a>
+      <a class="links" @click="experience()">Doświadczenie</a>
+      <a class="links" @click="projects()">Projekty i technologie</a>
+      <a class="links" @click="about()">O mnie</a>
+      <a class="links" @click="media()">Media</a>
+      <a class="links" @click="contact()">Kontakt</a>
     </div>
   </div>
 </template>
 
 <script>
+import { useRouter } from 'vue-router'
+
 export default {
   name: 'HeaderMain',
 
-  setup() {
-    const headerLogo = "<LEGION />"
+  data() {
+    return {
+      headerLogo: "<LEGION />",
+      router: useRouter()
+    }
+  },
 
-    return {headerLogo}
+  methods: {
+    about(){
+      this.router.push({ name: 'about' })
+    },
+
+    home(){
+      this.router.push({ name: 'home' })
+    },
+
+    experience(){
+      this.router.push({ name: 'experience' })
+    },
+
+    projects(){
+      this.router.push({ name: 'projects' })
+    },
+
+    media(){
+      this.router.push({ name: 'media' })
+    },
+    
+    contact(){
+      this.router.push({ name: 'contact' })
+    }
   }
 }
 </script>
@@ -59,5 +88,9 @@ export default {
     margin: 20px;
     font-size: 18px;
   }
+}
+
+a:hover{
+    cursor: pointer;
 }
 </style>

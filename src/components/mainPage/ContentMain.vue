@@ -6,7 +6,7 @@
                 <h1>Doświadczenie</h1>
             </div>
             <div class="image">
-                <img src="../../assets/experience.jpg" alt="experience">
+                <img src="../../assets/home/experience.jpg" alt="experience">
             </div>
             <div class="description">
                 <p>
@@ -19,7 +19,7 @@
                     w ramach projektu "Wkrocz w przyszłość".
                 </p>
 
-                <button>Czytaj dalej</button>
+                <h2 class="read-more-link" @click="experience()">Czytaj dalej</h2>
             </div>
         </div>
         <!-- Projects -->
@@ -28,7 +28,7 @@
                 <h1>Projekty i technologie</h1>
             </div>
             <div class="image">
-                <img src="../../assets/projects.jpg" alt="projects">
+                <img src="../../assets/home/projects.jpg" alt="projects">
             </div>
             <div class="description">
                 <p>
@@ -39,7 +39,7 @@
                     pracy z gitem i gitHubem.
                 </p>
 
-                <button>Czytaj dalej</button>
+                <h2 class="read-more-link" @click="projects()">Czytaj dalej</h2>
             </div>
         </div>
         <!-- About -->
@@ -48,7 +48,7 @@
                 <h1>O mnie</h1>
             </div>
             <div class="image">
-                <img src="../../assets/experience.jpg" alt="experience">
+                <img src="../../assets/home/experience.jpg" alt="experience">
             </div>
             <div class="description">
                 <p>
@@ -59,7 +59,8 @@
                     siedzę z przyjaciółmi na discordzie i razem z nimi w coś gram.
                 </p>
 
-                <button>Czytaj dalej</button>
+                
+                <h2 class="read-more-link" @click="about()">Czytaj dalej</h2>
             </div>
         </div>
         <!-- Media -->
@@ -68,7 +69,7 @@
                 <h1>Media</h1>
             </div>
             <div class="image">
-                <img src="../../assets/media.jpg" alt="media">
+                <img src="../../assets/home/media.jpg" alt="media">
             </div>
             <div class="description">
                 <p>
@@ -80,7 +81,7 @@
                     niektórych moich mediów kliknij przycisk poniżej.
                 </p>
 
-                <button>Czytaj dalej</button>
+                <h2 class="read-more-link" @click="media()">Czytaj dalej</h2>
             </div>
         </div>
         <!-- Contact -->
@@ -89,7 +90,7 @@
                 <h1>Kontakt</h1>
             </div>
             <div class="image">
-                <img src="../../assets/contact.png" alt="contact">
+                <img src="../../assets/home/contact.png" alt="contact">
             </div>
             <div class="description">
                 <p>
@@ -98,15 +99,47 @@
                     również powinienem szybko odpowiedzieć oraz mailem tam zaglądam najrzadziej.
                 </p>
 
-
-                <button>Czytaj dalej</button>
+                <h2 class="read-more-link" @click="contact()">Czytaj dalej</h2>     
             </div>
         </div>
     </div>
 </template>
 <script>
+import { useRouter } from 'vue-router'
+
 export default {
-    name: 'ContentMain'
+    name: 'ContentMain',
+
+    data() {
+    return {
+      router: useRouter()
+    }
+  },
+    methods: {
+        about(){
+        this.router.push({ name: 'about' })
+        },
+
+        home(){
+        this.router.push({ name: 'home' })
+        },
+
+        experience(){
+        this.router.push({ name: 'experience' })
+        },
+
+        projects(){
+        this.router.push({ name: 'projects' })
+        },
+
+        media(){
+        this.router.push({ name: 'media' })
+        },
+
+        contact(){
+        this.router.push({ name: 'contact' })
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>
@@ -208,6 +241,103 @@ export default {
         box-shadow: 0 15px 1em #000000;
         cursor: pointer;
     }
+}
 
+.read-more-link{
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    height: 20px;
+    margin-left: 35%;
+    background-color: #072AC8;
+    color: #FCF300;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #FCF300;
+    border-radius: 50px;
+    box-shadow: 0 5px 1em #000000;
+    overflow: hidden;
+    transition: all 0.5s;
+
+    &:hover{
+        background-position: 150px 0;
+        box-shadow: 0 15px 1em #000000;
+        cursor: pointer;
+    }
+}
+
+.read-more-link::after{
+    content: ">";
+    position: absolute;
+    right: 25px;
+    opacity: 1;
+}
+
+.read-more-link:hover::after{
+    animation: animateAfterHover 0.5s forwards;
+}
+
+.read-more-link:not(hover)::after{
+    animation: animateAfterNotHover 0.5s forwards;
+}
+
+.read-more-link::before{ 
+    content: ">";
+    position: absolute;
+    left: -15px;
+    opacity: 0;
+}
+
+.read-more-link:hover::before{
+    animation: animateBeforeHover 0.5s forwards;
+}
+
+.read-more-link:not(hover)::before{
+    animation: animateBeforeNotHover 0.5s forwards;
+}
+
+@keyframes animateAfterHover{
+    from{
+        right: 25px;
+        opacity: 1;
+    }
+    to{
+        right: -10px;
+        opacity: 0;
+    }
+}
+
+@keyframes animateAfterNotHover{
+    from{
+        right: -10px;
+        opacity: 0;
+    }
+    to{
+        right: 25px;
+        opacity: 1;
+    }
+}
+
+@keyframes animateBeforeHover{
+    from{
+        left: -15px;
+        opacity: 0;
+    }
+    to{
+        left: 25px;
+        opacity: 1;
+    }
+}
+
+@keyframes animateBeforeNotHover{
+    from{
+        left: 25px;
+        opacity: 1;
+    }
+    to{
+        left: -15px;
+        opacity: 0;
+    }
 }
 </style>
