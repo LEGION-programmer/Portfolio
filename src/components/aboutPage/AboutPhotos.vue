@@ -27,14 +27,12 @@ export default {
   "photo1 photo2 photo3 photo4 photo5"
   ;
 }
-
 .photos>img{
   width: 70%;
   height: 180px;
   border-radius: 100px;
   border: 1px solid #FCF300;
   box-shadow: 0 5px 1em #000000;
-
   &.photo1{
     position: relative;
     top: 40px;
@@ -43,7 +41,6 @@ export default {
     opacity: 0.4;
     animation: photo1-Slide 30s infinite;
   }
-
   &.photo2{
     position: relative;
     justify-self: center;
@@ -52,14 +49,12 @@ export default {
     opacity: 0.7;
     animation: photo2-Slide 30s infinite;
   }
-
   &.photo3{
     position: relative;
     justify-self: center;
     grid-area: photo3;
     animation: photo3-Slide 30s infinite;
   }
-
   &.photo4{
     position: relative;
     top: 20px;
@@ -68,7 +63,6 @@ export default {
     opacity: 0.7;
     animation: photo4-Slide 30s infinite;
   }
-
   &.photo5{
     position: relative;
     top: 40px;
@@ -78,7 +72,6 @@ export default {
     animation: photo5-Slide 30s infinite;
   }
 }
-
 @keyframes photo5-Slide {
   0%, 14%{
     grid-area: photo5;
@@ -126,7 +119,6 @@ export default {
     top: 20px;
   }
 }
-
 @keyframes photo4-Slide {
   0%, 14%{
     grid-area: photo4;
@@ -174,7 +166,6 @@ export default {
     top: -20px;
   }
 }
-
 @keyframes photo3-Slide {
   0%, 14%{
     grid-area: photo3;
@@ -222,7 +213,6 @@ export default {
     top: -20px;
   }
 }
-
 @keyframes photo2-Slide {
   0%, 14%{
     grid-area: photo2;
@@ -270,7 +260,6 @@ export default {
     top: -20px;
   }
 }
-
 @keyframes photo1-Slide {
   0%, 14%{
     grid-area: photo1;
