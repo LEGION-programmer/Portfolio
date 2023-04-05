@@ -41,6 +41,7 @@ export default {
     justify-self: center;
     grid-area: photo1;
     opacity: 0.4;
+    animation: photo1-Slide 30s infinite;
   }
 
   &.photo2{
@@ -49,12 +50,14 @@ export default {
     top: 20px;
     grid-area: photo2;
     opacity: 0.7;
+    animation: photo2-Slide 30s infinite;
   }
 
   &.photo3{
     position: relative;
     justify-self: center;
     grid-area: photo3;
+    animation: photo3-Slide 30s infinite;
   }
 
   &.photo4{
@@ -63,6 +66,7 @@ export default {
     justify-self: center;
     grid-area: photo4;
     opacity: 0.7;
+    animation: photo4-Slide 30s infinite;
   }
 
   &.photo5{
@@ -71,6 +75,247 @@ export default {
     justify-self: center;
     grid-area: photo5;
     opacity: 0.4;
+    animation: photo5-Slide 30s infinite;
+  }
+}
+
+@keyframes photo5-Slide {
+  0%, 14%{
+    grid-area: photo5;
+    opacity: 0.4;
+    top: 40px;
+  }
+  15%, 18%{
+    opacity: 0;
+    top: 20px;
+  }
+  20%, 34%{
+    grid-area: photo4;
+    opacity: 0.7;
+    top: 20px;
+  }
+  35%, 38%{
+    opacity: 0;
+    top: -20px;
+  }
+  40%, 54%{
+    grid-area: photo3;
+    opacity: 1;
+    top: 0;
+  }
+  55%, 58%{
+    opacity: 0;
+    top: -20px;
+  }
+  60%, 74%{
+    grid-area: photo2;
+    opacity: 0.7;
+    top: 20px;
+  }
+  75%, 78%{
+    opacity: 0;
+    top: 0;
+  }
+  80%, 94%{
+    grid-area: photo1;
+    opacity: 0.4;
+    top: 40px;
+  }
+  95%, 98%{
+    opacity: 0;
+    top: 20px;
+  }
+}
+
+@keyframes photo4-Slide {
+  0%, 14%{
+    grid-area: photo4;
+    opacity: 0.7;
+    top: 20px;
+  }
+  15%, 18%{
+    opacity: 0;
+    top: -20px;
+  }
+  20%, 34%{
+    grid-area: photo3;
+    opacity: 1;
+    top: 0;
+  }
+  35%, 38%{
+    opacity: 0;
+    top: -20px;
+  }
+  40%, 54%{
+    grid-area: photo2;
+    opacity: 0.7;
+    top: 20px;
+  }
+  55%, 58%{
+    opacity: 0;
+    top: 0;
+  }
+  60%, 74%{
+    grid-area: photo1;
+    opacity: 0.4;
+    top: 40px;
+  }
+  75%, 78%{
+    opacity: 0;
+    top: 20px;
+  }
+  80%, 94%{
+    grid-area: photo5;
+    opacity: 0.4;
+    top: 40px;
+  }
+  95%, 98%{
+    opacity: 0;
+    top: -20px;
+  }
+}
+
+@keyframes photo3-Slide {
+  0%, 14%{
+    grid-area: photo3;
+    opacity: 1;
+    top: 0;
+  }
+  15%, 18%{
+    opacity: 0;
+    top: -20px;
+  }
+  20%, 34%{
+    grid-area: photo2;
+    opacity: 0.7;
+    top: 20px;
+  }
+  35%, 38%{
+    opacity: 0;
+    top: 0;
+  }
+  40%, 54%{
+    grid-area: photo1;
+    opacity: 0.4;
+    top: 40px;
+  }
+  55%, 58%{
+    opacity: 0;
+    top: 20px;
+  }
+  60%, 74%{
+    grid-area: photo5;
+    opacity: 0.4;
+    top: 40px;
+  }
+  75%, 78%{
+    opacity: 0;
+    top: -20px;
+  }
+  80%, 94%{
+    grid-area: photo4;
+    opacity: 0.7;
+    top: 20px;
+  }
+  95%, 98%{
+    opacity: 0;
+    top: -20px;
+  }
+}
+
+@keyframes photo2-Slide {
+  0%, 14%{
+    grid-area: photo2;
+    opacity: 0.7;
+    top: 20px;
+  }
+  15%, 18%{
+    opacity: 0;
+    top: 0;
+  }
+  20%, 34%{
+    grid-area: photo1;
+    opacity: 0.4;
+    top: 40px;
+  }
+  35%, 38%{
+    opacity: 0;
+    top: 20px;
+  }
+  40%, 54%{
+    grid-area: photo5;
+    opacity: 0.4;
+    top: 40px;
+  }
+  55%, 58%{
+    opacity: 0;
+    top: -20px;
+  }
+  60%, 74%{
+    grid-area: photo4;
+    opacity: 0.7;
+    top: 20px;
+  }
+  75%, 78%{
+    opacity: 0;
+    top: -20px;
+  }
+  80%, 94%{
+    grid-area: photo3;
+    opacity: 1;
+    top: 0;
+  }
+  95%, 98%{
+    opacity: 0;
+    top: -20px;
+  }
+}
+
+@keyframes photo1-Slide {
+  0%, 14%{
+    grid-area: photo1;
+    opacity: 0.4;
+    top: 40px;
+  }
+  15%, 18%{
+    opacity: 0;
+    top: 20px;
+  }
+  20%, 34%{
+    grid-area: photo5;
+    opacity: 0.4;
+    top: 40px;
+  }
+  35%, 38%{
+    opacity: 0;
+    top: -20px;
+  }
+  40%, 54%{
+    grid-area: photo4;
+    opacity: 0.7;
+    top: 20px;
+  }
+  55%, 58%{
+    opacity: 0;
+    top: -20px;
+  }
+  60%, 74%{
+    grid-area: photo3;
+    opacity: 1;
+    top: 0;
+  }
+  75%, 78%{
+    opacity: 0;
+    top: -20px;
+  }
+  80%, 94%{
+    grid-area: photo2;
+    opacity: 0.7;
+    top: 20px;
+  }
+  95%, 98%{
+    opacity: 0;
+    top: 0;
   }
 }
 </style>
