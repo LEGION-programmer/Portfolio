@@ -1,16 +1,15 @@
 <template>
-  <div class="photos">
-    <img src="../../assets/media/photo1.jpg" alt="youtube" class="photo1">
-    <img src="../../assets/media/photo2.jpg" alt="twitch" class="photo2">
-    <img src="../../assets/media/photo3.jpg" alt="discord" class="photo3">
-    <img src="../../assets/media/photo4.jpg" alt="instagram" class="photo4">
-    <img src="../../assets/media/photo5.jpg" alt="github" class="photo5">
-  </div>
+    <div class="photos">
+        <img src="../../assets/projects/photo1.jpg" alt="javascript" class="photo1">
+        <img src="../../assets/projects/photo2.jpg" alt="html" class="photo2">
+        <img src="../../assets/projects/photo3.jpg" alt="css" class="photo3">
+        <img src="../../assets/projects/photo4.jpg" alt="nodejs" class="photo4">
+        <img src="../../assets/projects/photo5.jpg" alt="vuejs" class="photo5">
+    </div>
 </template>
-
 <script>
 export default {
-  name: 'AboutPhotos'
+    name: 'ProjectsPhotos'
 }
 </script>
 

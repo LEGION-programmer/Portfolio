@@ -220,27 +220,6 @@ export default {
         text-align: center;
         margin: 10px;
     }
-
-    >button{
-        transition: 0.5s;
-        width: 30%;
-        height: 40px;
-        margin: 10px;
-        margin-left: 35%;
-        background-color: #072AC8;
-        color: #FCF300;
-        border: 1px solid #FCF300;
-        border-radius: 50px;
-        box-shadow: 0 5px 1em #000000;
-        overflow: hidden;
-    }
-
-    >button:hover{
-        transition: 0.5s;
-        background-position: 150px 0;
-        box-shadow: 0 15px 1em #000000;
-        cursor: pointer;
-    }
 }
 
 .read-more-link{

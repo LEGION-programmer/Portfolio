@@ -6,7 +6,7 @@
                 <h1>Discord</h1>
             </div>
             <div class="image">
-                <img src="../../assets/media/photo3.jpg" alt="discord">
+                <img src="../../assets/contact/photo1.jpg" alt="discord">
             </div>
             <div class="description">
                 <p>
@@ -18,80 +18,60 @@
                 </p>
             </div>
         </div>
-        <!-- YouTube -->
+        <!-- Facebook -->
         <div class="content2-item">
             <div class="header header2">
-                <h1>YouTube</h1>
+                <h1>Facebook/Messenger</h1>
             </div>
             <div class="image">
-                <img src="../../assets/media/photo1.jpg" alt="youtube">
+                <img src="../../assets/contact/photo3.jpg" alt="facebook/messenger">
             </div>
             <div class="description">
                 <p>
-                    Filmów mam mało i rzadko coś dodaje, gdyż robię to głównie 
-                    dla siebie. Gdy mam pomysł na jakiś nowy materiał to siadam 
-                    i go przygotowuję. Są to głównie materiały z gier z podłożoną 
-                    muzyką i fajnie pocięte akcje. Mój kanał możesz znaleźć
-                     <a href="https://www.youtube.com/channel/UC82F6crRTKfV3WeoC54oxlQ" target="_blank">tutaj</a>.
+                    Tutaj również jestem całkiem aktywny więc szybko będę odpisywał.
+                    Nie trzeba mnie dodawać do znajomych wystarczy wysłać mi prywatną wiadomość.
+                    <a href="https://www.facebook.com/tomek.kaczmarek.79" target="_blank">Facebook/Messenger</a>
                 </p>    
             </div>
         </div>
-        <!-- Twitch -->
+        <!-- Gmail -->
         <div class="content1-item">
             <div class="header header1">
-                <h1>Twitch</h1>
+                <h1>Gmail</h1>
             </div>
             <div class="image">
-                <img src="../../assets/media/photo2.jpg" alt="twitch">
+                <img src="../../assets/contact/photo4.jpg" alt="Gmail">
             </div>
             <div class="description">
                 <p>
-                    Podobnie jak w przypadku youtuba streamy robię rzadko, gdyż 
-                    z nieznanych mi przyczyn mimo, że podczas streamowania lub nagrywania
-                    mam stałe fps (przynajmniej 60), a na nagroniu/streamie wygląda jakbym 
-                    miał 20-30fps. Nie mniej jednak staram się to poprawić, a jeśli masz ochotę 
-                    mnie śledzić, możesz mnie znaleźć <a href="https://www.twitch.tv/legion_tenprawdziwy" target="_blank">tutaj</a>.
+                    Na maila wchodzę najrzadziej, ale zawsze odpisuję, więc 
+                    jeśli nie dostałeś jeszcze odpowiedzi spokojnie, na pewno 
+                    w końcu odpiszę: tomaszlegionkaczmarek@wp.pl 
+                    <a href="mailto:tomaszlegionkaczmarek@wp.pl">Napisz do mnie</a>
                 </p>
             </div>
         </div>
-         <!-- Instagram -->
-         <div class="content2-item">
+        <!-- Phone -->
+        <div class="content2-item">
             <div class="header header2">
-                <h1>Instagram</h1>
+                <h1>Numer telefonu</h1>
             </div>
             <div class="image">
-                <img src="../../assets/media/photo4.jpg" alt="instagram">
+                <img src="../../assets/contact/photo5.jpg" alt="phone">
             </div>
             <div class="description">
                 <p>
-                    Instagrama założyłem niedawno, więc aktualnie zbyt wiele tam nie ma, 
-                    ale z biegiem czasu będę dodawał nowe zdjęcia więc myślę, że warto mnie 
-                    obserwować <a href="https://www.instagram.com/_l.3.g.1.o.n_/" target="_blank">tutaj</a>.
+                    Numer telefonu podaję dopiero po rozpoczęciu współpracy, 
+                    w celu szybszej komunikacji i uniknięciu ciągłego wydzwaniania obcych ludzi.
                 </p>    
-            </div>
-        </div>
-        <!-- GitHub -->
-        <div class="content1-item">
-            <div class="header header1">
-                <h1>GitHub</h1>
-            </div>
-            <div class="image">
-                <img src="../../assets/media/photo5.jpg" alt="GitHub">
-            </div>
-            <div class="description">
-                <p>
-                    Projektów obecnie może i mało, ale szybko ich przybywa. Moje repozytoria 
-                    zawsze są publiczne dla osób, które byłyby zaciekawione śledzeniem moich postępów. 
-                    Wszelkie uwagi lub pytania możecie zadawać na moim serwerze discord, a mojego 
-                    GitHuba możecie zobaczyć <a href="https://github.com/LEGION-programmer?tab=repositories" target="_blank">tutaj</a>.
-                </p>
             </div>
         </div>
     </div>
 </template>
 <script>
 export default {
-    name: 'AboutContent',
+    name: 'ContactContent',
+
 }
 </script>
 <style lang="scss" scoped>

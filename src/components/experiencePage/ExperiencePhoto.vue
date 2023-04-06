@@ -1,19 +1,17 @@
 <template>
-  <div class="photos">
-    <img src="../../assets/media/photo1.jpg" alt="youtube" class="photo1">
-    <img src="../../assets/media/photo2.jpg" alt="twitch" class="photo2">
-    <img src="../../assets/media/photo3.jpg" alt="discord" class="photo3">
-    <img src="../../assets/media/photo4.jpg" alt="instagram" class="photo4">
-    <img src="../../assets/media/photo5.jpg" alt="github" class="photo5">
-  </div>
+    <div class="photos">
+        <img src="../../assets/experience/photo1.jpg" alt="zpue" class="photo1">
+        <img src="../../assets/experience/photo2.jpg" alt="complex" class="photo2">
+        <img src="../../assets/experience/photo3.jpg" alt="factory" class="photo3">
+        <img src="../../assets/experience/photo4.jpg" alt="robot" class="photo4">
+        <img src="../../assets/experience/photo5.jpg" alt="robots" class="photo5">
+    </div>
 </template>
-
 <script>
 export default {
-  name: 'AboutPhotos'
+    name: 'ExperiencePhotos'
 }
 </script>
-
 <style lang="scss" scoped>
 *{
 font-family: sans-serif;
