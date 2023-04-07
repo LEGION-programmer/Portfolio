@@ -148,6 +148,7 @@ export default {
 }
 
 .content{
+    width: 100%;
     display: grid;
     height: auto;
     background-color: #e8e8e8;
@@ -156,8 +157,9 @@ export default {
 }
 
 .content1-item{
+    width: 100%;
     display: grid;
-    grid-template-columns: 70vh 60vh;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "header ."
     "image description"
@@ -167,7 +169,7 @@ export default {
 
 .content2-item{
     display: grid;
-    grid-template-columns: 60vh 70vh;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     ". header"
     "description image"
@@ -225,7 +227,7 @@ export default {
 .read-more-link{
     display: inline-block;
     position: relative;
-    width: 30%;
+    width: 40%;
     height: 20px;
     margin-left: 35%;
     background-color: #072AC8;
@@ -249,7 +251,7 @@ export default {
 .read-more-link::after{
     content: ">";
     position: absolute;
-    right: 25px;
+    right: 15px;
     opacity: 1;
 }
 
@@ -317,6 +319,26 @@ export default {
     to{
         left: -15px;
         opacity: 0;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .content1-item{
+        grid-template-areas: 
+        "header header"
+        "image image"
+        "description description"
+        ; 
+
+    }
+
+.content2-item{
+        grid-template-areas: 
+        "header header"
+        "image image"
+        "description description"
+        ; 
+
     }
 }
 </style>

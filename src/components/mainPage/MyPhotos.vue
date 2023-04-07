@@ -4,13 +4,11 @@
       <img src="../../assets/home/myPhoto1.jpg" alt="Legion photo" class="photo2">
       <img src="../../assets/home/myPhoto2.jpg" alt="Legion photo" class="photo3">
 
-      <div class="description">
-        
+      <div class="description">       
           <span class="typed-1">Mam na imię Tomek, jestem początkującym </span>
           <span class="typed-2">programistą i dziele się tutaj swoimi pracami, </span>
           <span class="typed-3">projektami, doświadczeniem oraz moimi</span>
-          <span class="typed-4">różnymi przemyśleniami na ich temat.</span>
-        
+          <span class="typed-4">różnymi przemyśleniami na ich temat.</span>        
       </div>
     </div>
 </template>
@@ -39,9 +37,9 @@ export default {
 }
 
 .photos>img{
-  width: 50%;
-  height: 200px;
-  border-radius: 100px;
+  width: 60%;
+  height: 230px;
+  border-radius: 200px;
   border: 1px solid #FCF300;
   box-shadow: 0 5px 1em #000000;
 
@@ -70,13 +68,12 @@ export default {
   grid-area: description;
   height: 100px;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   justify-self: center;
   align-self: start;
 
   >span{
     margin: 2px;
-    display: inline-block;
+    display: block;
     text-align: center;
     font-size: 18px;
     color: #3B322C;
@@ -118,6 +115,22 @@ export default {
   }
   100%{
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1160px){
+  .photos{
+    grid-template-areas: 
+    "photo1 photo2 photo3"
+    "description description description"
+    ;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .photos>img{
+    width: 90%;
+    height: 150px;
   }
 }
 </style>

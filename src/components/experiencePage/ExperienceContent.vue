@@ -10,9 +10,9 @@
             </div>
             <div class="description">
                 <p>
-                    W czerwcu 2022 roku rozpocząłem miesięczne praktyki w firmie ZPUE S.A.. 
+                    W czerwcu 2022 roku rozpocząłem miesięczne praktyki w firmie ZPUE S.A.
                     w dziale help desk. Podczas praktyk realizowałem swoje obowiązki takie jak: 
-                    wydawanie sprzętu komputerowego na inne działy, przygotowywanie sprzętu 
+                    wydawanie sprzętu komputerowego do innych działów, przygotowywanie sprzętu 
                     komputerowego dla nowych pracowników, montaż stanowisk pracy, klonowanie 
                     dysków maszyn produkcyjnych, rozwiązywanie problemów zgłaszanych przez innych 
                     pracowników, naprawianie sprzętu komputerowego i sieciowego. Podczas tych praktyk 
@@ -43,8 +43,8 @@
                     internetowymi; Oprócz tego zajmowaliśmy się składaniem i programowaniem robotów, mieliśmy 
                     możliwość rozwijania swoich umiejętność pracy w grupie oraz składaliśmy drukarkę 3D, do której 
                     później przygotowywaliśmy projekty do wydruku. Dzięki temu, że praktyki odbyły się za 
-                    granicą mieliśmy możliwość polepszyć swój język angielski i poznać grecką kulturę, gdyż w 
-                    dni wolne od praktyk zwiedzaliśmy takie miejsca jak Ateny, Tesaloniki, wyspę Skiatos i wiele więcej.
+                    granicą mieliśmy możliwość poprawić swój język angielski i poznać grecką kulturę, gdyż w 
+                    dni wolne od praktyk zwiedzaliśmy takie miejsca jak Ateny, Tesaloniki, wyspę Skiatos i wiele innych miejsc.
                     Po zakończeniu praktyk dostaliśmy certyfikaty oraz Europassa.
                 </p>    
             </div>
@@ -60,7 +60,7 @@
             <div class="description">
                 <p>
                     31 sierpnia 2022 roku zdobyłem certyfikat kwalifikacji zawodowej INF.02.
-                    Zakres kwalifikacji obejmuje: Administracje i eksploatacje systemów komputerowych, 
+                    Zakres kwalifikacji obejmuje: Administrację i eksploatację systemów komputerowych, 
                     urządzeń peryferyjnych i lokalnych sieci komputerowych.
                 </p>
             </div>
@@ -88,7 +88,7 @@ export default {
 
 .content1-item{
     display: grid;
-    grid-template-columns: 70vh 60vh;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "header ."
     "image description"
@@ -98,7 +98,7 @@ export default {
 
 .content2-item{
     display: grid;
-    grid-template-columns: 60vh 70vh;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     ". header"
     "description image"
@@ -130,7 +130,7 @@ export default {
     align-self: center;
 
     >img{
-        width: 90%;
+        width: 80%;
         height: 300px;
         border: 1px solid #FCF300;
         border-radius: 200px;
@@ -150,6 +150,26 @@ export default {
         font-size: 18px;
         text-align: center;
         margin: 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .content1-item{
+        grid-template-areas: 
+        "header header"
+        "image image"
+        "description description"
+        ; 
+
+    }
+
+.content2-item{
+        grid-template-areas: 
+        "header header"
+        "image image"
+        "description description"
+        ; 
+
     }
 }
 </style>

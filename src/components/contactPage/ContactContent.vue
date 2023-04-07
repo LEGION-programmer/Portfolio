@@ -80,6 +80,7 @@ export default {
 }
 
 .content{
+    width: 100%;
     display: grid;
     height: auto;
     background-color: #e8e8e8;
@@ -89,7 +90,8 @@ export default {
 
 .content1-item{
     display: grid;
-    grid-template-columns: 70vh 60vh;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "header ."
     "image description"
@@ -99,7 +101,7 @@ export default {
 
 .content2-item{
     display: grid;
-    grid-template-columns: 60vh 70vh;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     ". header"
     "description image"
@@ -131,7 +133,7 @@ export default {
     align-self: center;
 
     >img{
-        width: 90%;
+        width: 80%;
         height: 300px;
         border: 1px solid #FCF300;
         border-radius: 200px;
@@ -151,6 +153,26 @@ export default {
         font-size: 18px;
         text-align: center;
         margin: 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .content1-item{
+        grid-template-areas: 
+        "header header"
+        "image image"
+        "description description"
+        ; 
+
+    }
+
+.content2-item{
+        grid-template-areas: 
+        "header header"
+        "image image"
+        "description description"
+        ; 
+
     }
 }
 </style>

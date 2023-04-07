@@ -4,11 +4,11 @@
       <h1 @click="home()">{{ headerLogo }}</h1>  
     </div>
     <div class="options">
-      <a class="links" @click="experience()">Doświadczenie</a>
-      <a class="links" @click="projects()">Projekty i technologie</a>
-      <a class="links" @click="about()">O mnie</a>
-      <a class="links" @click="media()">Media</a>
-      <a class="links" @click="contact()">Kontakt</a>
+      <a class="links item1" @click="experience()">Doświadczenie</a>
+      <a class="links item2" @click="projects()">Projekty i technologie</a>
+      <a class="links item3" @click="about()">O mnie</a>
+      <a class="links item4" @click="media()">Media</a>
+      <a class="links item5" @click="contact()">Kontakt</a>
     </div>
   </div>
 </template>
@@ -92,5 +92,78 @@ export default {
 
 a:hover{
     cursor: pointer;
+}
+
+@media screen and (max-width: 450px){
+  .container{
+    width: 100vh;
+    height: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px;
+  }
+
+  .options{
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .container{
+    width: 100%;
+    height: 100px;
+    grid-template-columns: 1fr;
+  }
+
+  .options{
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 890px){
+  .container{
+    width: 100%;
+    height: 100px;
+
+  }
+
+  .options{
+    justify-self: start;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .container{
+    width: 100%;
+    height: 200px;
+
+  }
+
+  .options{
+    display: grid;
+    justify-self: start;
+    align-self: start;
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 ."
+    ;
+    &.item1{
+      grid-area: item1;
+    }
+    &.item2{
+      grid-area: item2;
+    }
+    &.item3{
+      grid-area: item3;
+    }
+    &.item4{
+      grid-area: item4;
+    }
+    &.item5{
+      grid-area: item5;
+    }
+  }
 }
 </style>

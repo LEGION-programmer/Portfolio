@@ -1,19 +1,19 @@
 <template>
-  <div class="photos">
-    <img src="../../assets/media/photo1.jpg" alt="youtube" class="photo1">
-    <img src="../../assets/media/photo2.jpg" alt="twitch" class="photo2">
-    <img src="../../assets/media/photo3.jpg" alt="discord" class="photo3">
-    <img src="../../assets/media/photo4.jpg" alt="instagram" class="photo4">
-    <img src="../../assets/media/photo5.jpg" alt="github" class="photo5">
-  </div>
+    <div class="photos">
+        <img :src=items[0] alt="zpue" class="photo1">
+        <img :src=items[1] alt="complex" class="photo2">
+        <img :src=items[2] alt="factory" class="photo3">
+        <img :src=items[3] alt="robot" class="photo4">
+        <img :src=items[4] alt="robots" class="photo5">
+    </div>
 </template>
-
 <script>
 export default {
-  name: 'AboutPhotos'
+    name: 'PhotoSlider',
+    props: ['items'],
+
 }
 </script>
-
 <style lang="scss" scoped>
 *{
 font-family: sans-serif;
@@ -306,5 +306,31 @@ box-shadow: 0 5px 1em #000000;
   opacity: 0;
   top: 0;
 }
+}
+
+@media screen and (max-width: 1000px){
+  .photos>img{
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .photos{
+    height: 250px;
+  }
+
+  .photos>img{
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .photos{
+    height: 150px;
+  }
+
+  .photos>img{
+    height: 70px;
+  }
 }
 </style>

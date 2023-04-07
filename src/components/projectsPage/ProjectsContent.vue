@@ -10,7 +10,7 @@
             </div>
             <div class="description">
                 <p>
-                    Niemal każdy programista tworzy todo listę. Więc i ja musiałem.
+                    Niemal każdy programista tworzy todo listę. Więc i ja to zrobiłem.
                     Program niby prosty, ale można nauczyć się wielu nowych rzeczy. 
                     Przy tym projekcie chciałem nauczyć się takich technologii jak:
                     Node.js, Express.js, Vue.js, MongoDB. W trakcie tworzenia doszły 
@@ -110,7 +110,7 @@ export default {
 
 .content1-item{
     display: grid;
-    grid-template-columns: 70vh 60vh;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "header ."
     "image description"
@@ -120,7 +120,7 @@ export default {
 
 .content2-item{
     display: grid;
-    grid-template-columns: 60vh 70vh;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     ". header"
     "description image"
@@ -182,7 +182,7 @@ export default {
     font-weight: bolder;
     display: inline-block;
     position: relative;
-    width: 40%;
+    width: 50%;
     height: 20px;
     margin-left: 35%;
     background-color: #072AC8;
@@ -274,6 +274,26 @@ export default {
     to{
         left: -15px;
         opacity: 0;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .content1-item{
+        grid-template-areas: 
+        "header header"
+        "image image"
+        "description description"
+        ; 
+
+    }
+
+    .content2-item{
+        grid-template-areas: 
+        "header header"
+        "image image"
+        "description description"
+        ; 
+
     }
 }
 </style>
