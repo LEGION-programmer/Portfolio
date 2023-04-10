@@ -308,9 +308,21 @@ box-shadow: 0 5px 1em #000000;
 }
 }
 
+@media screen and (max-width: 1150px){
+  .photos>img{
+    height: 160px;
+  }
+}
+
 @media screen and (max-width: 1000px){
   .photos>img{
     height: 150px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .photos>img{
+    height: 130px;
   }
 }
 
@@ -321,6 +333,12 @@ box-shadow: 0 5px 1em #000000;
 
   .photos>img{
     height: 100px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .photos>img{
+    height: 85px;
   }
 }
 

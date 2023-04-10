@@ -64,6 +64,7 @@ export default {
 }
 
 .description{
+  margin: 2px;
   display: grid;
   grid-area: description;
   height: 100px;
@@ -72,10 +73,10 @@ export default {
   align-self: start;
 
   >span{
-    margin: 2px;
     display: block;
     text-align: center;
-    font-size: 18px;
+    font-weight: bolder;
+    font-size: 16px;
     color: #3B322C;
     overflow: hidden;
     white-space: nowrap;
@@ -127,7 +128,21 @@ export default {
   }
 }
 
+@media screen and (max-width: 1050px){
+  .photos>img{
+    width: 70%;
+    height: 180px;
+  }
+}
+
 @media screen and (max-width: 750px){
+  .photos>img{
+    width: 80%;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 650px){
   .photos>img{
     width: 90%;
     height: 150px;
