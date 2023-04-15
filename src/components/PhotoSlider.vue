@@ -16,61 +16,62 @@ export default {
 </script>
 <style lang="scss" scoped>
 *{
-font-family: sans-serif;
+  font-family: sans-serif;
 }
 .photos{
-margin: 20px;
-display: grid;
-height: 350px;
-grid-template-columns: 20% 20% 20% 20% 20%;
-grid-template-areas: 
-"photo1 photo2 photo3 photo4 photo5"
-;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-areas: 
+  "photo1 photo2 photo3 photo4 photo5"
+  ;
 }
 .photos>img{
-width: 70%;
-height: 180px;
-border-radius: 100px;
-border: 1px solid #FCF300;
-box-shadow: 0 5px 1em #000000;
-&.photo1{
-  position: relative;
-  top: 40px;
-  justify-self: center;
-  grid-area: photo1;
-  opacity: 0.4;
-  animation: photo1-Slide 30s infinite;
-}
-&.photo2{
-  position: relative;
-  justify-self: center;
-  top: 20px;
-  grid-area: photo2;
-  opacity: 0.7;
-  animation: photo2-Slide 30s infinite;
-}
-&.photo3{
-  position: relative;
-  justify-self: center;
-  grid-area: photo3;
-  animation: photo3-Slide 30s infinite;
-}
-&.photo4{
-  position: relative;
-  top: 20px;
-  justify-self: center;
-  grid-area: photo4;
-  opacity: 0.7;
-  animation: photo4-Slide 30s infinite;
-}
-&.photo5{
-  position: relative;
-  top: 40px;
-  justify-self: center;
-  grid-area: photo5;
-  opacity: 0.4;
-  animation: photo5-Slide 30s infinite;
-}
+  width: 70%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 100px;
+  border: 1px solid #FCF300;
+  box-shadow: 0 5px 1em #000000;
+  &.photo1{
+    position: relative;
+    top: 40px;
+    justify-self: center;
+    grid-area: photo1;
+    opacity: 0.4;
+    animation: photo1-Slide 30s infinite;
+  }
+  &.photo2{
+    position: relative;
+    justify-self: center;
+    top: 20px;
+    grid-area: photo2;
+    opacity: 0.7;
+    animation: photo2-Slide 30s infinite;
+  }
+  &.photo3{
+    position: relative;
+    justify-self: center;
+    grid-area: photo3;
+    animation: photo3-Slide 30s infinite;
+  }
+  &.photo4{
+    position: relative;
+    top: 20px;
+    justify-self: center;
+    grid-area: photo4;
+    opacity: 0.7;
+    animation: photo4-Slide 30s infinite;
+  }
+  &.photo5{
+    position: relative;
+    top: 40px;
+    justify-self: center;
+    grid-area: photo5;
+    opacity: 0.4;
+    animation: photo5-Slide 30s infinite;
+  }
 }
 @keyframes photo5-Slide {
 0%, 14%{
@@ -306,49 +307,5 @@ box-shadow: 0 5px 1em #000000;
   opacity: 0;
   top: 0;
 }
-}
-
-@media screen and (max-width: 1150px){
-  .photos>img{
-    height: 160px;
-  }
-}
-
-@media screen and (max-width: 1000px){
-  .photos>img{
-    height: 150px;
-  }
-}
-
-@media screen and (max-width: 1000px){
-  .photos>img{
-    height: 130px;
-  }
-}
-
-@media screen and (max-width: 900px){
-  .photos{
-    height: 250px;
-  }
-
-  .photos>img{
-    height: 100px;
-  }
-}
-
-@media screen and (max-width: 700px){
-  .photos>img{
-    height: 85px;
-  }
-}
-
-@media screen and (max-width: 600px){
-  .photos{
-    height: 150px;
-  }
-
-  .photos>img{
-    height: 70px;
-  }
 }
 </style>

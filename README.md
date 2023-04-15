@@ -23,4 +23,4 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### You cen visit page here: legion-blog.netlify.app
+### You cen visit page here: https://legion-blog.netlify.app/

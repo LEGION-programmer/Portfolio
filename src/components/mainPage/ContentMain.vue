@@ -48,7 +48,7 @@
                 <h1>O mnie</h1>
             </div>
             <div class="image">
-                <img src="../../assets/home/experience.jpg" alt="experience">
+                <img src="../../assets/home/experience.jpg" alt="about">
             </div>
             <div class="description">
                 <p>
@@ -332,7 +332,7 @@ export default {
 
     }
 
-.content2-item{
+    .content2-item{
         grid-template-areas: 
         "header header"
         "image image"

@@ -1,6 +1,6 @@
 <template>
     <div class="photos">
-      <img src="../../assets/home/myPhoto3.jpg" alt="Legion photo" class="photo1">
+      <img src="../../assets/home/myPhoto3.jpg" alt="Legion photo" class="photo1" ref="el">
       <img src="../../assets/home/myPhoto1.jpg" alt="Legion photo" class="photo2">
       <img src="../../assets/home/myPhoto2.jpg" alt="Legion photo" class="photo3">
 
@@ -15,7 +15,8 @@
 
 <script>
 export default {
-    name: 'MyPhotos'
+  name: 'MyPhotos',
+
 }
 </script>
 
@@ -27,9 +28,7 @@ export default {
 .photos{
   margin: 20px;
   display: grid;
-  height: 350px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 250px 250px 250px;
   grid-template-areas: 
   "photo1 photo2 photo3"
   ". description ."
@@ -38,7 +37,8 @@ export default {
 
 .photos>img{
   width: 60%;
-  height: 230px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
   border-radius: 200px;
   border: 1px solid #FCF300;
   box-shadow: 0 5px 1em #000000;
@@ -64,7 +64,7 @@ export default {
 }
 
 .description{
-  margin: 2px;
+  margin-top: 60px;
   display: grid;
   grid-area: description;
   height: 100px;
@@ -125,27 +125,6 @@ export default {
     "photo1 photo2 photo3"
     "description description description"
     ;
-  }
-}
-
-@media screen and (max-width: 1050px){
-  .photos>img{
-    width: 70%;
-    height: 180px;
-  }
-}
-
-@media screen and (max-width: 750px){
-  .photos>img{
-    width: 80%;
-    height: 170px;
-  }
-}
-
-@media screen and (max-width: 650px){
-  .photos>img{
-    width: 90%;
-    height: 150px;
   }
 }
 </style>
